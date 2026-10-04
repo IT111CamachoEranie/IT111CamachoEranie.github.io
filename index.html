@@ -3,67 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eranie Camacho | Portfolio</title>
+
+    <title>Eranie Camacho | Front-End Developer</title>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Eranie Camacho</h1>
-        <p>IT Student | Front-End Developer</p>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                Eranie <span>Camacho</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
+    <!-- HOME -->
     <main>
 
-        <section id="home">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hello! I'm Eranie Camacho. Welcome to my personal portfolio website.</p>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                    <h1>
+                        Hello! I'm
+                        <span>Eranie Camacho.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Welcome to my personal portfolio website. I'm an
+                        Information Technology student and aspiring Front-End
+                        Developer passionate about creating responsive,
+                        user-friendly, and visually appealing websites.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="btn secondary-btn">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-ring">
+                        <img
+                            src="images/profile.jpg"
+                            alt="Eranie Camacho profile photo"
+                        >
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Eranie Camacho profile photo" width="200">
-    <p>
-         I am an Information Technology student and aspiring Front-End Developer
-         passionate about creating responsive, user-friendly, and visually appealing
-         websites using modern web technologies.
-    </p>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span></span>
+                    <h2>About <strong>Me</strong></h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+                        <p>
+                            I am an Information Technology student and aspiring
+                            Front-End Developer passionate about creating
+                            responsive, user-friendly, and visually appealing
+                            websites using modern web technologies.
+                        </p>
+
+                        <p>
+                            I enjoy learning how websites are designed and
+                            developed, and I am continuously improving my skills
+                            in HTML, CSS, JavaScript, responsive web design,
+                            and basic UI/UX design.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="info-row">
+                            <span class="info-icon">👤</span>
+                            <div>
+                                <small>Name</small>
+                                <p>Eranie Camacho</p>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-icon">🎓</span>
+                            <div>
+                                <small>Course</small>
+                                <p>Information Technology</p>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="info-icon">💻</span>
+                            <div>
+                                <small>Role</small>
+                                <p>Front-End Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
-                <li>Basic UI/UX Design</li>
-            </ul>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span></span>
+                    <h2>My <strong>Skills</strong></h2>
+                </div>
+
+                <p class="section-intro">
+                    Click a skill to learn more about what I know.
+                </p>
+
+                <div class="skills-grid">
+
+                    <button class="skill-card" data-skill="html">
+                        <div class="skill-icon html-icon">HTML</div>
+                        <h3>HTML</h3>
+                        <p>Structure and build web pages.</p>
+                    </button>
+
+                    <button class="skill-card" data-skill="css">
+                        <div class="skill-icon css-icon">CSS</div>
+                        <h3>CSS</h3>
+                        <p>Style and design web pages.</p>
+                    </button>
+
+                    <button class="skill-card" data-skill="javascript">
+                        <div class="skill-icon js-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>Add interactivity and functionality.</p>
+                    </button>
+
+                    <button class="skill-card" data-skill="responsive">
+                        <div class="skill-icon responsive-icon">↔</div>
+                        <h3>Responsive Web Design</h3>
+                        <p>Create websites that work on different devices.</p>
+                    </button>
+
+                    <button class="skill-card" data-skill="uiux">
+                        <div class="skill-icon uiux-icon">✦</div>
+                        <h3>Basic UI/UX Design</h3>
+                        <p>Design simple and user-friendly interfaces.</p>
+                    </button>
+
+                </div>
+
+                <!-- Skill information appears here -->
+                <div id="skill-details" class="skill-details">
+                    <h3>Select a skill</h3>
+                    <p>
+                        Click one of the skill cards above to see more information.
+                    </p>
+                </div>
+
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <p>My projects will be added here.</p>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span></span>
+                    <h2>My <strong>Projects</strong></h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-preview portfolio-preview">
+                            <span>&lt;/&gt;</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+
+                            <p>
+                                A responsive personal portfolio website built
+                                using HTML, CSS, and JavaScript to showcase my
+                                skills, projects, and contact information.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="projects/portfolio.html" class="project-link">
+                                View Project →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+                        <div class="project-preview calculator-preview">
+                            <span>123</span>
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Web Calculator</h3>
+
+                            <p>
+                                A simple responsive calculator concept created
+                                to practice HTML structure, CSS styling, and
+                                JavaScript interaction.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="projects/calculator.html" class="project-link">
+                                View Project →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: your-email@example.com</p>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span></span>
+                    <h2>Contact <strong>Me</strong></h2>
+                </div>
+
+                <p class="contact-intro">
+                    Feel free to reach out. I'd love to connect with you.
+                </p>
+
+                <div class="contact-card">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>
+                            <small>Email</small>
+
+                            <!-- REPLACE THIS WITH YOUR REAL EMAIL -->
+                            <a href="mailto:camachoeraniezy@gmail.com">
+                                camachoeraniezy@gmail.com
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">GH</div>
+                        <div>
+                            <small>GitHub</small>
+
+                            <a
+                                href="https://github.com/IT111CamachoEranie"
+                                target="_blank"
+                            >
+                                IT111CamachoEranie
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Eranie Camacho. All rights reserved.</p>
+        <p>
+            © <span id="current-year"></span>
+            Eranie Camacho. All rights reserved.
+        </p>
     </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
